@@ -2,54 +2,7 @@ using ImageUploaderApp.Data;
 using ImageUploaderApp.Models;
 using ImageUploaderApp.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
-public class ImageController : Controller
-{
-    private readonly AppDbContext _dbContext;
-    private readonly BlobStorageService _blobService;
-
-    public ImageController(AppDbContext dbContext, BlobStorageService blobService)
-    {
-        _dbContext = dbContext;
-        _blobService = blobService;
-    }
-
-    [HttpGet]
-    public IActionResult Index() => View();
-
-    [HttpPost]
-    public async Task<IActionResult> Index(IFormFile file)
-    {
-        if (file != null)
-        {
-            string blobUri;
-            using (var stream = file.OpenReadStream())
-            {
-                blobUri = await _blobService.UploadFileAsync(stream, file.FileName, file.ContentType);
-            }
-
-            var image = new ImageData
-            {
-                FileName = file.FileName,
-                ContentType = file.ContentType,
-                UploadDate = DateTime.UtcNow
-            };
-
-            _dbContext.ImageDatas.Add(image);
-            await _dbContext.SaveChangesAsync();
-            ViewData["Message"] = "Image uploaded successfully.";
-            ViewData["ImageUri"] = blobUri;
-        }
-
-        return View();
-    }
-}
 
 public class HomeController : Controller
 {
@@ -85,11 +38,10 @@ public class HomeController : Controller
                     ContentType = file.ContentType,
                     UploadDate = DateTime.UtcNow,
                     Url = result,  // Assuming 'result' contains the URL from BlobStorageService
-                    UploadTime = DateTime.UtcNow
                 };
 
                 // Add to the database
-                _dbContext.ImageDatas.Add(imageData);
+                _dbContext.FileData.Add(imageData);
                 await _dbContext.SaveChangesAsync();
 
                 ViewBag.Message = "Image uploaded successfully!";
@@ -105,7 +57,7 @@ public class HomeController : Controller
 
     public async Task<IActionResult> ViewImages()
     {
-        var images = await _dbContext.ImageDatas.ToListAsync();
+        var images = await _dbContext.FileData.ToListAsync();
         return View(images);
     }
 

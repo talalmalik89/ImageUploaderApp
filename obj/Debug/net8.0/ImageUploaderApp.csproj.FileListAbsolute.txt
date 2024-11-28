@@ -1,11 +1,3 @@
-D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.csproj.AssemblyReference.cache
-D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.GeneratedMSBuildEditorConfig.editorconfig
-D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.AssemblyInfoInputs.cache
-D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.AssemblyInfo.cs
-D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.csproj.CoreCompileInputs.cache
-D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.MvcApplicationPartsAssemblyInfo.cache
-D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.RazorAssemblyInfo.cache
-D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.RazorAssemblyInfo.cs
 D:\webapp\ImageUploaderApp\bin\Debug\net8.0\appsettings.Development.json
 D:\webapp\ImageUploaderApp\bin\Debug\net8.0\appsettings.json
 D:\webapp\ImageUploaderApp\bin\Debug\net8.0\ImageUploaderApp.staticwebassets.runtime.json
@@ -138,6 +130,15 @@ D:\webapp\ImageUploaderApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runti
 D:\webapp\ImageUploaderApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\webapp\ImageUploaderApp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\webapp\ImageUploaderApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.csproj.AssemblyReference.cache
+D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.AssemblyInfoInputs.cache
+D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.AssemblyInfo.cs
+D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.csproj.CoreCompileInputs.cache
+D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.MvcApplicationPartsAssemblyInfo.cache
+D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.RazorAssemblyInfo.cache
+D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.RazorAssemblyInfo.cs
+D:\webapp\ImageUploaderApp\obj\Debug\net8.0\ImageUploaderApp.sourcelink.json
 D:\webapp\ImageUploaderApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\webapp\ImageUploaderApp\obj\Debug\net8.0\scopedcss\bundle\ImageUploaderApp.styles.css
 D:\webapp\ImageUploaderApp\obj\Debug\net8.0\scopedcss\projectbundle\ImageUploaderApp.bundle.scp.css

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageUploaderApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e82135f1aa920bd0d1c2ad6fccdc416e1428d088")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageUploaderApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageUploaderApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

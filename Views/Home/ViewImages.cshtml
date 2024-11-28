@@ -1,0 +1,78 @@
+﻿@model IEnumerable<ImageUploaderApp.Models.ImageData>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            background: url('https://archerpoint.com/wp-content/uploads/2018/01/Microsoft-Cloud-min.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for visibility */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .image-card {
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent card background */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Card shadow */
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 2px solid white; /* White border for contrast */
+        }
+
+        .image-card p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for visibility */
+        }
+    </style>
+</head>
+<body>
+    <h1>✨ Uploaded Images ✨</h1>
+    <div class="gallery">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var image in Model)
+            {
+                <div class="image-card">
+                    <img src="@image.Url" alt="@image.FileName">
+                    <p><strong>@image.FileName</strong></p>
+                    <p>@image.UploadDate.ToString("MMMM dd, yyyy HH:mm")</p>
+                </div>
+            }
+        }
+        else
+        {
+            <p style="text-align: center; font-size: 1.5rem; margin-top: 2rem;">No images uploaded yet!</p>
+        }
+    </div>
+</body>
+</html>

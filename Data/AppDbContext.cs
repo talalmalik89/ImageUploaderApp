@@ -6,7 +6,7 @@ namespace ImageUploaderApp.Data
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-        public DbSet<ImageData> ImageDatas { get; set; }
+        public DbSet<ImageData> FileData { get; set; }
 
     }
 }

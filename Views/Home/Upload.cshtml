@@ -2,21 +2,75 @@
     ViewData["Title"] = "Image Upload";
 }
 
-<h2>Upload an Image</h2>
-<form method="post" enctype="multipart/form-data" asp-action="UploadImage">
-    <div>
-        <label for="file">Select Image:</label>
-        <input type="file" id="file" name="file" accept="image/*" />
-    </div>
-    <div>
-        <button type="submit">Upload Image</button>
-    </div>
-</form>
+<style>
+    body {
+        background: url('https://archerpoint.com/wp-content/uploads/2018/01/Microsoft-Cloud-min.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .upload-container {
+        text-align: center;
+        padding: 10vh 2rem;
+    }
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for visibility */
+    }
+    label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for visibility */
+    }
+    .btn {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        border-radius: 25px;
+        text-transform: uppercase;
+        margin: 1rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+    }
+    .btn-primary {
+        background: linear-gradient(45deg, #4ec4ff, #0078d7);
+        border: none;
+        color: white;
+    }
+    .btn-warning {
+        background: linear-gradient(45deg, #f093fb, #f5576c);
+        border: none;
+        color: white;
+    }
+    .btn:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+    p {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+</style>
 
-<a href="/Image/ViewImages">View Uploaded Images</a>
+<div class="upload-container">
+    <h2>Upload an Image</h2>
+    <form method="post" enctype="multipart/form-data" asp-action="UploadImage">
+        <div>
+            <label for="file">Select Image:</label>
+            <input class="btn btn-primary" type="file" id="file" name="file" accept="image/*" />
+        </div>
+        <div>
+            <button class="btn btn-primary" type="submit">Upload Image</button>
+        </div>
+    </form>
 
+    <a class="btn btn-warning" href="/Home/ViewImages">View Uploaded Images</a>
 
-@if (ViewBag.Message != null)
-{
-    <p>@ViewBag.Message</p>
-}
+    @if (ViewBag.Message != null)
+    {
+        <p>@ViewBag.Message</p>
+    }
+</div>

@@ -18,3 +18,25 @@ If you want to learn more about creating good readme files then refer the follow
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
+
+
+# Create SQL table 
+/****** Object:  Table [dbo].[FileData]    Script Date: 29/11/2024 12:22:43 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[FileData](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Url] [nvarchar](max) NULL,
+	[UploadDate] [datetime] NULL,
+	[ContentType] [varchar](max) NULL,
+	[FileName] [varchar](max) NULL,
+ CONSTRAINT [PK_FileData] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

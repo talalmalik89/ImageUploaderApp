@@ -2,7 +2,60 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    body {
+        background: url('https://archerpoint.com/wp-content/uploads/2018/01/Microsoft-Cloud-min.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .welcome-container {
+        text-align: center;
+        padding: 10vh 2rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+    }
+    p {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+    }
+    ul {
+        list-style-type: disc;
+        margin: 2rem auto;
+        max-width: 600px;
+        text-align: left;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+    }
+    a {
+        color: #4ec4ff; /* Bright Azure-themed color for links */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover {
+        color: #1ba1e2; /* Darker Azure color on hover */
+        text-decoration: underline;
+    }
+</style>
+
+<div class="welcome-container">
+    <h1 class="display-4">✨ Welcome to the Image Upload App ✨</h1>
+    <p>Learn how to work with Azure technologies by uploading images and managing metadata!</p>
+    
+    <div class="description">
+        <p><strong>About the App:</strong></p>
+        <p>This application allows users to upload images to an <strong>Azure Blob Storage</strong> container and saves metadata such as file name, upload time, and other details in an <strong>Azure SQL Database</strong>. It is designed for <strong>lab and educational purposes</strong>, helping you understand integration with Azure cloud services.</p>
+        <p>The app demonstrates:</p>
+        <ul>
+            <li>Working with <strong>Azure Blob Storage</strong> for file handling.</li>
+            <li>Storing and managing metadata in <strong>Azure SQL</strong>.</li>
+            <li>Building web applications with <strong>ASP.NET Core</strong>.</li>
+        </ul>
+        <p>Explore more about <a href="https://learn.microsoft.com/aspnet/core" target="_blank">ASP.NET Core</a> and Azure technologies.</p>
+    </div>
 </div>

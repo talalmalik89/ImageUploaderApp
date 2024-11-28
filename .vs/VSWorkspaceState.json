@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Views",
+    "\\Controllers",
     "\\Views\\Image"
   ],
-  "SelectedNode": "\\ImageUploaderApp.csproj",
   "PreviewInSolutionExplorer": false
 }

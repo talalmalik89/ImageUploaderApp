@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGxvYWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/webapp/ImageUploaderApp/Views/Home/ViewImages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3SW1hZ2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/webapp/ImageUploaderApp/Views/Image/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
