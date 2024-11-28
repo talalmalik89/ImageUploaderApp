@@ -20,14 +20,3 @@ namespace ImageUploaderApp.Models
         // Optional: Time the image was uploaded
     }
 }
-
-//namespace ImageUploaderApp
-//{
-//    public class AppDbContext : DbContext
-//    {
-//        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-//        { }
-
-//        public DbSet<ImageData> FileData { get; set; }
-//    }
-//}
